@@ -1,0 +1,80 @@
+/* MEDIA QUERIES (@media) generar página con tres imágenes para diferentes formatos. Que haya además otros elementos como titulares y párrafos. Básicamente,
+formato desktop (ejemplo; ancho 1200px) y móvil (ejemplo: ancho 640px). Podéis hacer primero el móvil (mobile first) y después el desktop o al revés. A tener en cuenta: tamaño de imágenes (pueden ser img o background-image) la disposición de las imágenes (flex horizontal o vertical, y wrap) tamaño y color de texto (legibilidad) color de fondo display de elementos (eliminar accesorios) Temática: libre (pinturas, fotos, posters, anuncios, ilustraciones, etc). OJO,
+con vídeos enlazados (iframe) es más difícil). Al menos tres imágenes. */
+
+body{
+    background-color: antiquewhite
+}
+header{
+    text-align: center;
+    justify-content: center;
+    text-decoration-line: underline;
+    border: 5px;
+    border-style:solid;
+    border-color: aliceblue;
+}
+section{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    border-style:dashed;
+    border-color: black;
+    display:block;
+    gap: 10px;
+}
+.articulos{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(221, 236, 12);
+    display: block;
+    gap: 10px;
+}
+.cont_cuadros{
+    display: inline-block;
+    /* align-items: center;
+    justify-content: center; */
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(231, 9, 9);
+    gap: 30px;
+}
+.cuadros{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px grey;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    border: 5px;
+    border-style:dotted;
+    border-color: rgb(56, 15, 238);
+    width: 50%;
+    height: 50%;
+    
+}
+img{
+    width: 70%;
+    height: 70%;
+    
+    border-style: ridge;
+    border-color: brown;
+    border-width: 15px;
+}
+    
+@media screen and (min-width: 400px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: lavender;
+    }
+}
